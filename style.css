@@ -1,0 +1,392 @@
+@import url('https://fonts.cdnfonts.com/css/fonarto');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.shop img {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+img{
+    width: 100%;
+}
+
+html {
+  font-family: 'Fonarto', sans-serif;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 1;
+}
+
+header .shop a {
+  font-size: 2%;
+  color: white;
+  padding: 15px 30px;
+}
+
+header .shop a span {
+  color: white;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li a {
+  margin: 5px 20px;
+  font-size: 20px;
+  color: white;
+  padding: 10px 10px;
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("coffee-shop.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content h1 {
+  text-shadow: 9px 9px black;
+  font-size: 100px;
+  padding: 12px;
+  color: white;
+  text-align: center;
+}
+
+.basta {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}
+
+.basta .basta-header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basta-header h2 {
+  color: White;
+  padding: 10px 30px;
+}
+
+.basta .basta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.basta .basta-content .coffee, .frappe, .tea, .pastry, .pasta {
+  width: 250px;
+}
+
+.basta .basta-content .coffee .coffee-img img {
+  background-color:rgb(11, 75, 11);
+  border-radius: 50%;
+}
+
+.basta .basta-content .frappe .frappe-img img {
+  background-color:rgb(11, 75, 11);
+  border-radius: 50%;
+}
+
+.basta .basta-content .tea .tea-img img {
+  background-color:rgb(11, 75, 11);
+  border-radius: 50%;
+}
+
+.basta .basta-content .pastry .pastry-img img {
+  background-color:rgb(11, 75, 11);
+  border-radius: 50%;
+}
+
+.basta .basta-content .pasta .pasta-img img {
+  background-color:rgb(11, 75, 11);
+  border-radius: 50%;
+}
+
+.basta .basta-content .coffee-text, .frappe-text, .tea-text, .pastry-text, .pasta-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.menu {
+  background-color: #333333;
+  width: 100%;
+}
+
+.menu .menu-header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.menu-header h2 {
+  color: white;
+  padding: 10px 30px;
+}
+
+.menu-header h3{
+  color: white;
+  padding: 10px 20px;
+}
+
+.menu-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #333333;
+  flex-wrap: wrap;
+}
+
+.menu-box .item {
+  height: 480px;
+  border: 2px solid gray;
+  width: 250px;
+  margin: 60px;
+}
+
+.menu-box .item-image {
+  background-color: rgb(11, 75, 11);
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.menu-box .item-image img:hover {
+  transform: scale(1.1);
+  transition: transform .3s ease-in-out;
+}
+
+.menu-box .card-body {
+  color: white;
+  padding: 20px;
+}
+
+.menu-box .card-body h3 {
+  padding: 10px 0;
+}
+
+.menu-box .card-body money {
+  font-size: 20px;
+  margin-left: 90px;
+}
+
+.team {
+  width: 80%;
+  height: 250px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.team h2 {
+  text-shadow: 2px 2px black;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+
+}
+
+.team ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.team li {
+  --img-1: url("Tao.jpg");
+  --img-2: url("Tao.jpg");
+  --img-3: url("Tao.jpg");
+  --img-4: url("Tao.jpg");
+  --img-5: url("Tao.jpg");
+  --img-6: url("Tao.jpg");
+
+&:nth-child(1) {
+  background-image: var(--img-1);
+}
+
+&:nth-child(2) {
+  background-image: var(--img-2);
+}
+
+&:nth-child(3) {
+  background-image: var(--img-3);
+}
+
+&:nth-child(4) {
+  background-image: var(--img-4);
+}
+
+&:nth-child(5) {
+  background-image: var(--img-5);
+}
+
+&:nth-child(6) {
+  background-image: var(--img-6);
+}
+
+  width: 30%;
+  height: 250px;
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all 500ms ease;
+}
+
+.team li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.team li div a {
+  display: block;
+  height: 250px;
+  width: 100%;
+  color: white;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+
+.team li div a *{
+  width: 100%;
+  margin: 0;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateX(-20px);
+  transition: all 400ms ease;
+}
+
+.team li div a h2{
+  font-family: 'Fonarto', sans-serif;
+  text-overflow: clip;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+
+.team li div a *{
+  opacity: 0;
+}
+
+.team ul:hover li{
+  width: 10%;
+}
+
+.team ul:hover li:hover {
+  width: 80%;
+}
+
+.team ul:hover li:hover a {
+  background: #00000066;
+}
+
+.team ul:hover li:hover a *{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.OO{
+  background-color: #333;
+}
+.container {
+  max-width: 1400px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container h2 {
+  text-align: center;
+  padding:25px;
+  margin: 20px;
+}
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: calc(50% - 10px); 
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #D1D1D4;
+}
+.contact-form textarea {
+  width: calc(100% - 20px); 
+  height: 150px;
+}
+.contact-form input[type="submit"] {
+  background: #00080f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  display: block;
+  width: 10%;
+  box-sizing: border-box;
+}
+.contact-form input[type="submit"]:hover {
+  background: #424040;
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: orange;
+  padding: 1em 0;
+  text-align: center;
+}
